@@ -2,6 +2,16 @@
   Base Element Styles
 ==================================== */
 
+
+/* Color Pallette
+
+50B2C0 - Pacific Blue 
+FEEFDD - Antique White 
+FAAA8D - Light Salmon
+FF4000 - Red Orange Color Wheel 
+201E1F - Eerie Black */
+
+
 * {
   box-sizing: border-box;
 }
@@ -31,15 +41,18 @@ footer {
 
 /* ---- Navigation ---- */
 
-#nav {
+#nav, #skills-list {
   padding-inline-start: 0;
+}
+
+.nav-item, .skills-item, .footer-nav-item {
+  list-style-type: none;
 }
 
 .nav-item {
   padding: 0.5em 6.5em;
   margin-bottom: 0.25em;
   background-color: white;
-  list-style-type: none;
   text-align: center;
 }
 
@@ -66,7 +79,7 @@ a {
   margin-bottom: 1em;
 }
 
-.profile-desc, #contact-desc {
+.profile-desc, #contact-desc, #skills-desc, #languages {
   width: 90%;
   margin: 0 0 1.25em;
   text-align: center;
@@ -90,49 +103,38 @@ a {
   padding-bottom: 2.5em;
 }
 
+/* ---- Skills ---- */
+
+#languages {
+  padding: 1em;
+  color: white;
+  border-radius: 6px;;
+  background-color: #FF4000;
+}
+
 /* ---- Footer ---- */
 
 #footer-nav {
-  padding: 2em;
-  padding-inline-start: 0;
+  padding: 2em 1em;
   margin: 0;
-}
-
-.footer-nav-item {
-  list-style-type: none;
 }
 
 /* ---- Layout Containers ---- */
 
-#nav-bar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#intro {
+#nav-bar, #intro, .portfolio-item, #contact-wrapper, #skills-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .portfolio-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-bottom: 1em;
-}
-
-#contact-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 #footer-nav {
   display: flex;
   flex: 1;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .footer-desktop {

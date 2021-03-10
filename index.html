@@ -4,77 +4,87 @@
     <meta charset="UTF-8">
     <title>Vivek Gupta's Porfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-        <header id="main-header">
+    <header id="main-header">
+        <nav>
             <div id="nav-bar">
                 <h1>Vivek Gupta</h1>
                 <ul id="nav">
                     <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">PORTFOLIO</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">PORTFOLIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">SKILLS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
                 </ul>
             </div>
-            <div id="intro">
-                <img src="images/responsive-layout-profile.png" alt="Profile picture of Vivek Gupta" class="intro-item profile-pic">
-                <p class="intro-item">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and I'm excited to put all my skills to use!</p>
+        </nav>
+        <div id="intro">
+            <img src="images/responsive-layout-profile.png" alt="Profile picture of Vivek Gupta" class="intro-item profile-pic">
+            <p class="intro-item">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and I'm excited to put all my skills to use!</p>
+        </div>
+    </header>
+    <main>
+        <section id="portfolio">
+            <h2>PORTFOLIO</h2>
+                <div id="portfolio-wrapper">
+                    <div class="portfolio-item">
+                        <img src="images/portfolio-1.png" alt="Graphic of marketing page" class="portfolio-pic">
+                        <h3>Marketing Page</h3>
+                        <p class="profile-desc">This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/portfolio-2.png" alt="Graphic of search page" class="portfolio-pic">
+                        <h3>Search Page</h3>
+                        <p class="profile-desc">This project searches through a specific database to find information that the user is trying to look up.</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/portfolio-3.png" alt="Graphic of travel app" class="portfolio-pic">
+                        <h3>Travel App</h3>
+                        <p class="profile-desc">This project compares travel times based on different transportation methods and tells you the best one.</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/portfolio-4.png" alt="Graphic of map" class="portfolio-pic">
+                        <h3>Map of Favorite Spots</h3>
+                        <p class="profile-desc">This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/portfolio-5.png" alt="Graphic of photo gallery" class="portfolio-pic">
+                        <h3>Photo Gallery</h3>
+                        <p class="profile-desc">This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/portfolio-6.png" alt="Graphic of calculator" class="portfolio-pic">
+                        <h3>Calculator</h3>
+                        <p class="profile-desc">Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+                    </div>
+                </div>
+        </section>
+        <section id="skills">
+            <div id="skills-container">
+                <h2>SKILLS</h2>
+                <p id="skills-desc">I want to master the process of building beautiful web sites and amazing web apps. To achieve this, I am increasing my knowledge, skills and abilities in:</p>
+                <p id="languages">HTML, CSS, JavaScript, Sass, Ruby, Rails, Python & PHP</p>           
             </div>
-        </header>
-        <main>
-            <section>
-                <h2>PORTFOLIO</h2>
-                    <div id="portfolio-wrapper">
-                        <div class="portfolio-item">
-                            <img src="images/portfolio-1.png" alt="Graphic of marketing page" class="portfolio-pic">
-                            <h3>Marketing Page</h3>
-                            <p class="profile-desc">This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
-                        </div>
-                        <div class="portfolio-item">
-                            <img src="images/portfolio-2.png" alt="Graphic of search page" class="portfolio-pic">
-                            <h3>Search Page</h3>
-                            <p class="profile-desc">This project searches through a specific database to find information that the user is trying to look up.</p>
-                        </div>
-                        <div class="portfolio-item">
-                            <img src="images/portfolio-3.png" alt="Graphic of travel app" class="portfolio-pic">
-                            <h3>Travel App</h3>
-                            <p class="profile-desc">This project compares travel times based on different transportation methods and tells you the best one.</p>
-                        </div>
-                        <div class="portfolio-item">
-                            <img src="images/portfolio-4.png" alt="Graphic of map" class="portfolio-pic">
-                            <h3>Map of Favorite Spots</h3>
-                            <p class="profile-desc">This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-                        </div>
-                        <div class="portfolio-item">
-                            <img src="images/portfolio-5.png" alt="Graphic of photo gallery" class="portfolio-pic">
-                            <h3>Photo Gallery</h3>
-                            <p class="profile-desc">This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-                        </div>
-                        <div class="portfolio-item">
-                            <img src="images/portfolio-6.png" alt="Graphic of calculator" class="portfolio-pic">
-                            <h3>Calculator</h3>
-                            <p class="profile-desc">Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
-                        </div>
-                    </div>
-            </section>
-            <section id="contact">
-                <h2>CONTACT</h2>
-                    <div id="contact-wrapper">
-                        <p id="contact-desc">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-                        <p>Phone <span id="phone">+1 (111) 555-1234</span></p>
-                        <p id="email">Email <span id="email">email@yoursite.com</span></p>
-                    </div>
-            </section>
-        </main>
-        <footer>
-            <ul id="footer-nav">
-                <li class="footer-nav-item">Vivek Gupta</li>
-                <li class="footer-nav-item footer-desktop"><a href="#">Home</a></li>
-                <li class="footer-nav-item footer-desktop"><a href="#">Portfolio</a></li>
-                <li class="footer-nav-item footer-desktop"><a href="#">Contact</a></li>
-                <li class="footer-nav-item footer-mobile"><a href="#">BACK TO TOP</a></li>
-            </ul>
-        </footer>
+        </section>
+        <section id="contact">
+            <h2>CONTACT</h2>
+                <div id="contact-wrapper">
+                    <p id="contact-desc">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+                    <p>Phone <span id="phone">+1 (111) 555-1234</span></p>
+                    <p id="email">Email <span id="email">email@yoursite.com</span></p>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <ul id="footer-nav">
+            <li class="footer-nav-item">Vivek Gupta</li>
+            <li class="footer-nav-item footer-desktop"><a href="#">Home</a></li>
+            <li class="footer-nav-item footer-desktop"><a href="#">Portfolio</a></li>
+            <li class="footer-nav-item footer-desktop"><a href="#">Contact</a></li>
+            <li class="footer-nav-item footer-mobile"><a href="#">BACK TO TOP</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
