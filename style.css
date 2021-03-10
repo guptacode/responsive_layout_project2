@@ -17,6 +17,9 @@ h2 {
   margin: 2em 0;
 }
 
+footer {
+  background-color: peachpuff;
+}
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -40,7 +43,7 @@ h2 {
   text-align: center;
 }
 
-.nav-link {
+a {
   text-decoration: none;
 }
 
@@ -56,14 +59,47 @@ h2 {
   text-align: center;
 }
 
+/* ---- Portfolio ---- */
+
 .portfolio-pic {
   width: 90%;
   margin-bottom: 1em;
 }
 
-.profile-desc {
+.profile-desc, #contact-desc {
+  width: 90%;
   margin: 0 0 1.25em;
   text-align: center;
+}
+
+/* ---- Contact ---- */
+
+#contact {
+  padding-bottom: 1em;
+  border-bottom: 2px solid rgb(121, 121, 121);
+  background-color: peachpuff;
+
+}
+
+#contact h2 {
+  padding-top: 2.25em;
+}
+
+#email {
+  margin: 0;
+  padding-bottom: 2.5em;
+}
+
+/* ---- Footer ---- */
+
+#footer-nav {
+  padding: 2em;
+  padding-inline-start: 0;
+  margin: 0;
+}
+
+.footer-nav-item {
+  list-style-type: none;
 }
 
 /* ---- Layout Containers ---- */
@@ -87,7 +123,21 @@ h2 {
   margin-bottom: 1em;
 }
 
+#contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+#footer-nav {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+
+.footer-desktop {
+  display: none;
+}
 
 /* ================================= 
   Media Queries
