@@ -2,41 +2,47 @@
   Base Element Styles
 ==================================== */
 
-
-/* Color Pallette
-
-50B2C0 - Pacific Blue 
-FEEFDD - Antique White 
-FAAA8D - Light Salmon
-FF4000 - Red Orange Color Wheel 
-201E1F - Eerie Black */
-
-
 * {
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
 }
 
 h1 {
   width: 80%;
   text-align: center; 
   /* padding-top: 1em; */
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
 }
 
 h2 {
   text-align: center;
-  margin: 2em 0;
+  padding: 2em 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
 }
 
-footer {
-  background-color: peachpuff;
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1.25em;
 }
+
 /* ================================= 
   Base Layout Styles
 ==================================== */
 
+#main-header, #contact, footer {
+  color: white;
+  background-image: linear-gradient(135deg, #175fff, #315ada 50%); 
+}
+
 #main-header {
-  background-color: peachpuff;
-  padding: 1.75em 0; 
+  padding: 1.75em 0;
 }
 
 /* ---- Navigation ---- */
@@ -50,13 +56,14 @@ footer {
 }
 
 .nav-item {
-  padding: 0.5em 6.5em;
+  padding: 0.75em 6em;
   margin-bottom: 0.25em;
   background-color: white;
   text-align: center;
 }
 
 a {
+  color: black;
   text-decoration: none;
 }
 
@@ -85,25 +92,16 @@ a {
   text-align: center;
 }
 
-/* ---- Contact ---- */
-
-#contact {
-  padding-bottom: 1em;
-  border-bottom: 2px solid rgb(121, 121, 121);
-  background-color: peachpuff;
-
-}
-
-#contact h2 {
-  padding-top: 2.25em;
-}
-
-#email {
-  margin: 0;
-  padding-bottom: 2.5em;
-}
-
 /* ---- Skills ---- */
+
+#skills {
+  background-color: #f7f8fa;
+  padding-bottom: 1.5em;
+}
+
+#skills-desc {
+  padding-bottom: 0.5em;
+}
 
 #languages {
   padding: 1em;
@@ -119,6 +117,29 @@ a {
   margin: 0;
 }
 
+/* ---- Contact ---- */
+
+#contact {
+  padding-bottom: 1em;
+  border-bottom: 2px solid white;
+}
+
+#contact h2 {
+  padding-top: 2.25em;
+}
+
+#email {
+  margin: 0;
+  padding-bottom: 2.5em;
+}
+
+span {
+  font-weight: 400;
+}
+
+#backtotop {
+  color: white;
+}
 /* ---- Layout Containers ---- */
 
 #nav-bar, #intro, .portfolio-item, #contact-wrapper, #skills-container {
