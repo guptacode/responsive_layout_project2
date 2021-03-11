@@ -74,7 +74,7 @@ a {
   padding: 1.5em 0 1em;
 }
 
-#intro p {
+.intro-desc {
   width: 90%;
   text-align: center;
 }
@@ -96,7 +96,7 @@ a {
 
 #skills {
   background-color: #f7f8fa;
-  padding-bottom: 1.5em;
+  padding-bottom: 3em;
 }
 
 #skills-desc {
@@ -108,13 +108,6 @@ a {
   color: white;
   border-radius: 6px;;
   background-color: #FF4000;
-}
-
-/* ---- Footer ---- */
-
-#footer-nav {
-  padding: 2em 1em;
-  margin: 0;
 }
 
 /* ---- Contact ---- */
@@ -140,6 +133,14 @@ span {
 #backtotop {
   color: white;
 }
+
+/* ---- Footer ---- */
+
+#footer-nav {
+  padding: 2em 1em;
+  margin: 0;
+}
+
 /* ---- Layout Containers ---- */
 
 #nav-bar, #intro, .portfolio-item, #contact-wrapper, #skills-container {
@@ -166,8 +167,59 @@ span {
   Media Queries
 ==================================== */
 
-/* #portfolio-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
+@media screen and (min-width: 768px) {
+  #nav {
+    display: flex;
+    flex: 1;
+  }
+
+  .nav-item {
+    padding: 0.75em 3em;
+    margin: 0 5px 0.25em;
+  }
+
+  #intro {
+    flex-direction: row;
+  }
+
+  .intro-item {
+    flex: 1;
+    margin: 1em;
+  }
+  
+  .profile-pic {
+    order: 2;
+    width: 40%;
+    /* flex: 2.5; */
+  }
+
+  .intro-desc {
+    flex: 2;
+    text-align: left;
+  }
+
+  #portfolio-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .portfolio-item {
+    flex: 1 50%;
+  }
+
+  .footer-desktop {
+    display: revert;
+  }
+
+  #home, #p-footer, #c-footer, #backtotop {
+    color: white;
+    margin: 1em;
+  }
+
+  .footer-name {
+    margin-right: auto;
+  }
+}
+
+
+
