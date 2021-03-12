@@ -246,13 +246,20 @@ span {
 
   h1 {
     text-align: left;
-    margin-left: 16px;
+    margin-left: 20px;
+  }
+
+  .intro-desc {
+    margin-left: 20px;
   }
 
   .portfolio-item {
     flex: 1 33%;
   }
 
-  
+  .footer-name {
+    margin-left: 16px;
+  }
+
 }
 
